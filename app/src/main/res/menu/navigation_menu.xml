@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/myAccount"
+          android:title="Moje dane"/>
+    <item android:id="@+id/myActiveTrainingsButton"
+          android:title="Moje aktywne treningi"/>
+    <item android:id="@+id/myTrainingsButton"
+          android:title="Moje treningi"/>
+    <item android:id="@+id/myAchievements"
+          android:title="Osiągnięcia"/>
+    <item android:id="@+id/logout"
+          android:title="Wyloguj się"/>
+
+</menu>

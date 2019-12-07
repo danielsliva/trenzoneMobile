@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryApp"
+        tools:context=".MainActivity">
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="221dp"
+            android:layout_height="47dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:bootstrapSize="md"
+            app:bootstrapBrand="info"
+            android:id="@+id/username"
+            android:hint="username"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            android:layout_marginEnd="82dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="222dp"
+            android:layout_height="45dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            app:bootstrapSize="md"
+            app:bootstrapBrand="info"
+            android:id="@+id/password"
+            android:hint="password" android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/username"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="80dp"
+            android:layout_marginEnd="82dp" app:layout_constraintEnd_toEndOf="parent"
+    />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="212dp"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"
+            app:bootstrapBrand="primary"
+            style="@android:style/Widget.DeviceDefault.Light.Button"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="160dp"
+            android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/password"
+            app:layout_constraintVertical_bias="0.0" android:layout_marginEnd="83dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+            android:layout_width="308dp"
+            android:layout_height="229dp" app:srcCompat="@drawable/logo"
+            android:id="@+id/logo"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="76dp" android:layout_marginEnd="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+    />
+</android.support.constraint.ConstraintLayout>

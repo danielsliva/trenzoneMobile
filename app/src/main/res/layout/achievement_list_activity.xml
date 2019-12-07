@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/training_custom_shape"
+                    tools:context=".AchievementListActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+    >
+
+        <ImageView
+                android:layout_width="151dp"
+                android:layout_height="163dp" app:srcCompat="@color/colorPrimaryApp"
+                android:id="@+id/pictureView"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:padding="16dp"
+                android:layout_height="match_parent" android:id="@+id/achievementText" android:layout_weight="1"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"/>
+
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/achievementListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <ProgressBar
+            android:layout_weight="1"
+            android:id="@+id/achievement_progressBar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</LinearLayout>

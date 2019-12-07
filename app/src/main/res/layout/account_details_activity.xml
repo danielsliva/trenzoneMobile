@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryApp"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/username2"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignTop="@+id/username1" android:layout_alignStart="@+id/age2"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/trainer" android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/username1"/>
+    <TextView
+            android:text="Wiek:"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/age"
+            android:visibility="invisible"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/height"
+            app:layout_constraintTop_toBottomOf="@+id/email" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/age2"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" android:layout_alignTop="@+id/age"
+            android:layout_alignStart="@+id/weight2"
+            app:layout_constraintTop_toBottomOf="@+id/email2" android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/age"/>
+    <TextView
+            android:text="Opis"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:id="@+id/description"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/age"
+            android:visibility="invisible" android:layout_alignTop="@+id/phone2"
+            app:layout_constraintTop_toBottomOf="@+id/phone" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="Nr. tel:"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:id="@+id/phone"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/age"
+            android:visibility="invisible" android:layout_alignTop="@+id/phone2"
+            app:layout_constraintTop_toBottomOf="@+id/job" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="265dp"
+            android:layout_height="248dp"
+            android:id="@+id/description2"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/username2"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintTop_toBottomOf="@+id/phone2" android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/description"/>
+    <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/phone2"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/username2"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintTop_toBottomOf="@+id/job2" android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/phone"/>
+    <TextView
+            android:text="Siłownia:"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:id="@+id/job"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/age" android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/city" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/job2"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/username2"
+            android:layout_alignTop="@+id/job"
+            app:layout_constraintTop_toBottomOf="@+id/city2" android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/job"/>
+    <TextView
+            android:text="Miasto:"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:id="@+id/city"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/age" android:visibility="invisible" android:layout_alignParentTop="true"
+            app:layout_constraintTop_toBottomOf="@+id/weight" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/city2"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/username2" android:layout_alignTop="@+id/city"
+            app:layout_constraintTop_toBottomOf="@+id/weight2" android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/city"/>
+    <TextView
+            android:text="Waga:"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/weight"
+            android:visibility="invisible"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/age"
+            app:layout_constraintTop_toBottomOf="@+id/height" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/weight2"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignTop="@+id/weight" android:layout_alignStart="@+id/username2"
+            app:layout_constraintTop_toBottomOf="@+id/height2" android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/weight"/>
+    <TextView
+            android:text="Wzrost:"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/height"
+            android:visibility="invisible"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/description"
+            app:layout_constraintTop_toBottomOf="@+id/age" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/height2"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" android:layout_alignTop="@+id/height"
+            android:layout_alignStart="@+id/username2"
+            app:layout_constraintTop_toBottomOf="@+id/age2" android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/height"/>
+    <TextView
+            android:text="Trener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trainer"
+            android:layout_alignParentStart="true"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" android:visibility="invisible"
+            android:layout_alignTop="@+id/name_lastname"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="37dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" android:id="@+id/name_lastname"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" android:layout_marginStart="9dp"
+            app:layout_constraintStart_toEndOf="@+id/trainer"/>
+    <TextView
+            android:text="Login:"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/username1"
+            android:visibility="invisible"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/age"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/trainer" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="Email:"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/email"
+            android:visibility="invisible"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:layout_alignStart="@+id/age"
+            app:layout_constraintTop_toBottomOf="@+id/username1" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/email2"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" android:layout_alignTop="@+id/email"
+            android:layout_alignStart="@+id/username2"
+            app:layout_constraintTop_toBottomOf="@+id/username2" android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/email"/>
+    <ProgressBar
+            android:layout_weight="1"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</android.support.constraint.ConstraintLayout>
